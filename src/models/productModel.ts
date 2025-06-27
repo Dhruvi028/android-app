@@ -1,0 +1,6 @@
+const OPTION_ALL = 1;
+const OPTION_SNACKS = 2;
+const OPTION_DRINKS = 3;
+
+
+export { OPTION_ALL, OPTION_DRINKS, OPTION_SNACKS };

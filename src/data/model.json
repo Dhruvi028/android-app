@@ -1,0 +1,564 @@
+{
+  "machine": {
+    "id": 509,
+    "machineCode": "10138",
+    "status": true,
+    "operationMode": "normal",
+    "cashlessDeviceStatus": false,
+    "name": "Test Rahul - New",
+    "statusMessage": "",
+    "machineLayout": {
+      "id": 1,
+      "rowCount": 6,
+      "colCountByRows": "{\"1\":4,\"2\":4,\"3\":4,\"4\":8,\"5\":8,\"6\":8}",
+      "name": "Vendstop",
+      "createdAt": "2021-11-16T08:04:24.298Z",
+      "updatedAt": "2021-11-16T08:04:24.298Z"
+    },
+    "operatorId": 1,
+    "deviceId": 490,
+    "createdAt": "2024-05-11T05:49:51.406Z",
+    "updatedAt": "2025-02-11T13:49:48.000Z",
+    "deletedAt": null,
+    "machineDetails": [
+      {
+        "id": 18552,
+        "rowNumber": 1,
+        "columnNumber": 1,
+        "quantity": 10,
+        "selectionCode": 101,
+        "status": true,
+        "machineId": 509,
+        "createdAt": "2024-05-11T05:49:51.408Z",
+        "updatedAt": "2025-04-04T15:10:04.000Z",
+        "product": {
+          "id": 13
+        }
+      },
+      {
+        "id": 18553,
+        "rowNumber": 1,
+        "columnNumber": 2,
+        "quantity": 10,
+        "selectionCode": 102,
+        "status": true,
+        "machineId": 509,
+        "createdAt": "2024-05-11T05:49:51.409Z",
+        "updatedAt": "2025-04-04T15:11:19.000Z",
+        "product": {
+          "id": 15
+        }
+      },
+      {
+        "id": 18554,
+        "rowNumber": 1,
+        "columnNumber": 3,
+        "quantity": 0,
+        "selectionCode": null,
+        "status": true,
+        "machineId": 509,
+        "createdAt": "2024-05-11T05:49:51.411Z",
+        "updatedAt": "2024-05-11T05:49:51.411Z",
+        "product": {
+          "id": 15
+        }
+      },
+      {
+        "id": 18555,
+        "rowNumber": 1,
+        "columnNumber": 4,
+        "quantity": 0,
+        "selectionCode": null,
+        "status": true,
+        "machineId": 509,
+        "createdAt": "2024-05-11T05:49:51.412Z",
+        "updatedAt": "2024-05-11T05:49:51.412Z",
+        "product": {
+          "id": null
+        }
+      },
+      {
+        "id": 18556,
+        "rowNumber": 2,
+        "columnNumber": 1,
+        "quantity": 0,
+        "selectionCode": null,
+        "status": true,
+        "machineId": 509,
+        "createdAt": "2024-05-11T05:49:51.412Z",
+        "updatedAt": "2024-05-11T05:49:51.412Z",
+        "product": {
+          "id": 13
+        }
+      },
+      {
+        "id": 18557,
+        "rowNumber": 2,
+        "columnNumber": 2,
+        "quantity": 0,
+        "selectionCode": null,
+        "status": true,
+        "machineId": 509,
+        "createdAt": "2024-05-11T05:49:51.413Z",
+        "updatedAt": "2024-05-11T05:49:51.413Z",
+        "product": {
+          "id": 13
+        }
+      },
+      {
+        "id": 18558,
+        "rowNumber": 2,
+        "columnNumber": 3,
+        "quantity": 0,
+        "selectionCode": null,
+        "status": true,
+        "machineId": 509,
+        "createdAt": "2024-05-11T05:49:51.415Z",
+        "updatedAt": "2024-05-11T05:49:51.415Z",
+        "product": {
+          "id": 13
+        }
+      },
+      {
+        "id": 18559,
+        "rowNumber": 2,
+        "columnNumber": 4,
+        "quantity": 0,
+        "selectionCode": null,
+        "status": true,
+        "machineId": 509,
+        "createdAt": "2024-05-11T05:49:51.416Z",
+        "updatedAt": "2024-05-11T05:49:51.416Z",
+        "product": {
+          "id": null
+        }
+      },
+      {
+        "id": 18560,
+        "rowNumber": 3,
+        "columnNumber": 1,
+        "quantity": 0,
+        "selectionCode": null,
+        "status": true,
+        "machineId": 509,
+        "createdAt": "2024-05-11T05:49:51.418Z",
+        "updatedAt": "2024-05-11T05:49:51.418Z",
+        "product": {
+          "id": 13
+        }
+      },
+      {
+        "id": 18561,
+        "rowNumber": 3,
+        "columnNumber": 2,
+        "quantity": 0,
+        "selectionCode": null,
+        "status": true,
+        "machineId": 509,
+        "createdAt": "2024-05-11T05:49:51.419Z",
+        "updatedAt": "2024-05-11T05:49:51.419Z",
+        "product": {
+          "id": 13
+        }
+      },
+      {
+        "id": 18562,
+        "rowNumber": 3,
+        "columnNumber": 3,
+        "quantity": 0,
+        "selectionCode": null,
+        "status": true,
+        "machineId": 509,
+        "createdAt": "2024-05-11T05:49:51.420Z",
+        "updatedAt": "2024-05-11T05:49:51.420Z",
+        "product": {
+          "id": null
+        }
+      },
+      {
+        "id": 18563,
+        "rowNumber": 3,
+        "columnNumber": 4,
+        "quantity": 0,
+        "selectionCode": null,
+        "status": true,
+        "machineId": 509,
+        "createdAt": "2024-05-11T05:49:51.421Z",
+        "updatedAt": "2024-05-11T05:49:51.421Z",
+        "product": {
+          "id": 13
+        }
+      },
+      {
+        "id": 18564,
+        "rowNumber": 4,
+        "columnNumber": 1,
+        "quantity": 0,
+        "selectionCode": null,
+        "status": true,
+        "machineId": 509,
+        "createdAt": "2024-05-11T05:49:51.422Z",
+        "updatedAt": "2024-05-11T05:49:51.422Z",
+        "product": {
+          "id": null
+        }
+      },
+      {
+        "id": 18565,
+        "rowNumber": 4,
+        "columnNumber": 2,
+        "quantity": 0,
+        "selectionCode": null,
+        "status": true,
+        "machineId": 509,
+        "createdAt": "2024-05-11T05:49:51.423Z",
+        "updatedAt": "2024-05-11T05:49:51.423Z",
+        "product": {
+          "id": 13
+        }
+      },
+      {
+        "id": 18566,
+        "rowNumber": 4,
+        "columnNumber": 3,
+        "quantity": 0,
+        "selectionCode": null,
+        "status": true,
+        "machineId": 509,
+        "createdAt": "2024-05-11T05:49:51.424Z",
+        "updatedAt": "2024-05-11T05:49:51.424Z",
+        "product": {
+          "id": null
+        }
+      },
+      {
+        "id": 18567,
+        "rowNumber": 4,
+        "columnNumber": 4,
+        "quantity": 0,
+        "selectionCode": null,
+        "status": true,
+        "machineId": 509,
+        "createdAt": "2024-05-11T05:49:51.425Z",
+        "updatedAt": "2024-05-11T05:49:51.425Z",
+        "product": {
+          "id": 13
+        }
+      },
+      {
+        "id": 18568,
+        "rowNumber": 4,
+        "columnNumber": 5,
+        "quantity": 0,
+        "selectionCode": null,
+        "status": true,
+        "machineId": 509,
+        "createdAt": "2024-05-11T05:49:51.426Z",
+        "updatedAt": "2024-05-11T05:49:51.426Z",
+        "product": {
+          "id": null
+        }
+      },
+      {
+        "id": 18569,
+        "rowNumber": 4,
+        "columnNumber": 6,
+        "quantity": 0,
+        "selectionCode": null,
+        "status": true,
+        "machineId": 509,
+        "createdAt": "2024-05-11T05:49:51.428Z",
+        "updatedAt": "2024-05-11T05:49:51.428Z",
+        "product": {
+          "id": 13
+        }
+      },
+      {
+        "id": 18570,
+        "rowNumber": 4,
+        "columnNumber": 7,
+        "quantity": 0,
+        "selectionCode": null,
+        "status": true,
+        "machineId": 509,
+        "createdAt": "2024-05-11T05:49:51.430Z",
+        "updatedAt": "2024-05-11T05:49:51.430Z",
+        "product": {
+          "id": null
+        }
+      },
+      {
+        "id": 18571,
+        "rowNumber": 4,
+        "columnNumber": 8,
+        "quantity": 0,
+        "selectionCode": null,
+        "status": true,
+        "machineId": 509,
+        "createdAt": "2024-05-11T05:49:51.431Z",
+        "updatedAt": "2024-05-11T05:49:51.431Z",
+        "product": {
+          "id": null
+        }
+      },
+      {
+        "id": 18572,
+        "rowNumber": 5,
+        "columnNumber": 1,
+        "quantity": 0,
+        "selectionCode": null,
+        "status": true,
+        "machineId": 509,
+        "createdAt": "2024-05-11T05:49:51.436Z",
+        "updatedAt": "2024-05-11T05:49:51.436Z",
+        "product": {
+          "id": null
+        }
+      },
+      {
+        "id": 18573,
+        "rowNumber": 5,
+        "columnNumber": 2,
+        "quantity": 0,
+        "selectionCode": null,
+        "status": true,
+        "machineId": 509,
+        "createdAt": "2024-05-11T05:49:51.440Z",
+        "updatedAt": "2024-05-11T05:49:51.440Z",
+        "product": {
+          "id": null
+        }
+      },
+      {
+        "id": 18574,
+        "rowNumber": 5,
+        "columnNumber": 3,
+        "quantity": 0,
+        "selectionCode": null,
+        "status": true,
+        "machineId": 509,
+        "createdAt": "2024-05-11T05:49:51.443Z",
+        "updatedAt": "2024-05-11T05:49:51.443Z",
+        "product": {
+          "id": null
+        }
+      },
+      {
+        "id": 18575,
+        "rowNumber": 5,
+        "columnNumber": 4,
+        "quantity": 0,
+        "selectionCode": null,
+        "status": true,
+        "machineId": 509,
+        "createdAt": "2024-05-11T05:49:51.446Z",
+        "updatedAt": "2024-05-11T05:49:51.446Z",
+        "product": {
+          "id": null
+        }
+      },
+      {
+        "id": 18576,
+        "rowNumber": 5,
+        "columnNumber": 5,
+        "quantity": 0,
+        "selectionCode": null,
+        "status": true,
+        "machineId": 509,
+        "createdAt": "2024-05-11T05:49:51.448Z",
+        "updatedAt": "2024-05-11T05:49:51.448Z",
+        "product": {
+          "id": null
+        }
+      },
+      {
+        "id": 18577,
+        "rowNumber": 5,
+        "columnNumber": 6,
+        "quantity": 0,
+        "selectionCode": null,
+        "status": true,
+        "machineId": 509,
+        "createdAt": "2024-05-11T05:49:51.453Z",
+        "updatedAt": "2024-05-11T05:49:51.453Z",
+        "product": {
+          "id": null
+        }
+      },
+      {
+        "id": 18578,
+        "rowNumber": 5,
+        "columnNumber": 7,
+        "quantity": 0,
+        "selectionCode": null,
+        "status": true,
+        "machineId": 509,
+        "createdAt": "2024-05-11T05:49:51.454Z",
+        "updatedAt": "2024-05-11T05:49:51.454Z",
+        "product": {
+          "id": 13
+        }
+      },
+      {
+        "id": 18579,
+        "rowNumber": 5,
+        "columnNumber": 8,
+        "quantity": 0,
+        "selectionCode": null,
+        "status": true,
+        "machineId": 509,
+        "createdAt": "2024-05-11T05:49:51.457Z",
+        "updatedAt": "2024-05-11T05:49:51.457Z",
+        "product": {
+          "id": 13
+        }
+      },
+      {
+        "id": 18580,
+        "rowNumber": 6,
+        "columnNumber": 1,
+        "quantity": 0,
+        "selectionCode": null,
+        "status": true,
+        "machineId": 509,
+        "createdAt": "2024-05-11T05:49:51.461Z",
+        "updatedAt": "2024-05-11T05:49:51.461Z",
+        "product": {
+          "id": 13
+        }
+      },
+      {
+        "id": 18581,
+        "rowNumber": 6,
+        "columnNumber": 2,
+        "quantity": 0,
+        "selectionCode": null,
+        "status": true,
+        "machineId": 509,
+        "createdAt": "2024-05-11T05:49:51.462Z",
+        "updatedAt": "2024-05-11T05:49:51.462Z",
+        "product": {
+          "id": 13
+        }
+      },
+      {
+        "id": 18582,
+        "rowNumber": 6,
+        "columnNumber": 3,
+        "quantity": 0,
+        "selectionCode": null,
+        "status": true,
+        "machineId": 509,
+        "createdAt": "2024-05-11T05:49:51.464Z",
+        "updatedAt": "2024-05-11T05:49:51.464Z",
+        "product": {
+          "id": 13
+        }
+      },
+      {
+        "id": 18583,
+        "rowNumber": 6,
+        "columnNumber": 4,
+        "quantity": 0,
+        "selectionCode": null,
+        "status": true,
+        "machineId": 509,
+        "createdAt": "2024-05-11T05:49:51.468Z",
+        "updatedAt": "2024-05-11T05:49:51.468Z",
+        "product": {
+          "id": 13
+        }
+      },
+      {
+        "id": 18584,
+        "rowNumber": 6,
+        "columnNumber": 5,
+        "quantity": 0,
+        "selectionCode": null,
+        "status": true,
+        "machineId": 509,
+        "createdAt": "2024-05-11T05:49:51.470Z",
+        "updatedAt": "2024-05-11T05:49:51.470Z",
+        "product": {
+          "id": 13
+        }
+      },
+      {
+        "id": 18585,
+        "rowNumber": 6,
+        "columnNumber": 6,
+        "quantity": 0,
+        "selectionCode": null,
+        "status": true,
+        "machineId": 509,
+        "createdAt": "2024-05-11T05:49:51.472Z",
+        "updatedAt": "2024-05-11T05:49:51.472Z",
+        "product": {
+          "id": 13
+        }
+      },
+      {
+        "id": 18586,
+        "rowNumber": 6,
+        "columnNumber": 7,
+        "quantity": 0,
+        "selectionCode": null,
+        "status": true,
+        "machineId": 509,
+        "createdAt": "2024-05-11T05:49:51.473Z",
+        "updatedAt": "2024-05-11T05:49:51.473Z",
+        "product": {
+          "id": 13
+        }
+      },
+      {
+        "id": 18587,
+        "rowNumber": 6,
+        "columnNumber": 8,
+        "quantity": 0,
+        "selectionCode": null,
+        "status": true,
+        "machineId": 509,
+        "createdAt": "2024-05-11T05:49:51.475Z",
+        "updatedAt": "2024-05-11T05:49:51.475Z",
+        "product": {
+          "id": 13
+        }
+      }
+    ]
+  },
+  "products": [
+    {
+      "id": 13,
+      "productCode": "10012",
+      "name": "Lays Chile Lemon",
+      "mrp": 10,
+      "sellingPrice": 10,
+      "imageUrl": "https://24b7-product-images.s3.ap-south-1.amazonaws.com/20.jfif",
+      "measure": 50,
+      "unit": "g",
+      "status": true,
+      "isApproved": false,
+      "type": "chips",
+      "operatorId": 1,
+      "createdAt": "2021-11-16T08:04:24.573Z",
+      "updatedAt": "2021-11-16T08:04:24.573Z"
+    },
+    {
+      "id": 15,
+      "productCode": "10014",
+      "name": "Sprite",
+      "mrp": 50,
+      "sellingPrice": 50,
+      "imageUrl": "https://24b7-product-images.s3.ap-south-1.amazonaws.com/22.png",
+      "measure": 10,
+      "unit": "ml",
+      "status": true,
+      "isApproved": false,
+      "type": "drinks",
+      "operatorId": 1,
+      "createdAt": "2021-11-16T08:04:24.611Z",
+      "updatedAt": "2021-11-16T08:04:24.611Z"
+    }
+  ]
+}
