@@ -1,7 +1,23 @@
-import React, { useMemo, useState } from "react";
-import { ActivityIndicator, FlatList, Text } from "react-native";
+import React, { useMemo } from "react"; // Removed useState, ActivityIndicator as loading is handled by parent
+import { FlatList, Text, Dimensions } from "react-native"; // Added Dimensions
 import ProductCard from "./ProductCard";
 import { OPTION_ALL, OPTION_DRINKS, OPTION_SNACKS } from "../models/productModel";
+
+// Calculate constants for getItemLayout for the horizontal list
+// These are calculated once when the module loads.
+// Assumes screen width doesn't change drastically or list re-mounts.
+const windowWidth = Dimensions.get('window').width;
+// itemWidth from ProductCard.tsx: (width - 150) / 2
+const HORIZONTAL_ITEM_CONTENT_WIDTH = (windowWidth - 150) / 2;
+// mr-6 on ProductCard's root View (1.5rem = 24px assuming 16px base for Tailwind)
+const HORIZONTAL_ITEM_MARGIN_RIGHT = 24;
+const HORIZONTAL_ITEM_LENGTH = HORIZONTAL_ITEM_CONTENT_WIDTH + HORIZONTAL_ITEM_MARGIN_RIGHT;
+
+const horizontalGetItemLayout = (data: any, index: number) => ({
+    length: HORIZONTAL_ITEM_LENGTH,
+    offset: HORIZONTAL_ITEM_LENGTH * index,
+    index,
+});
 
 export default function ProductGrid({
     productsInRows,
@@ -45,6 +61,7 @@ export default function ProductGrid({
             keyExtractor={(item, index) => item.id ? `product-${item.id}` : `product-${item.row}-${item.column}-${index}`}
             horizontal
             showsHorizontalScrollIndicator={true}
+            getItemLayout={horizontalGetItemLayout} // Added getItemLayout
             renderItem={({ item, index: colIndex }) => (
                 <ProductCard
                     navigation={navigation}

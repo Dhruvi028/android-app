@@ -7,6 +7,10 @@ import { StatusBar } from 'react-native';
 import { useEffect } from 'react';
 import { AuthProvider, useAuth } from './src/context/AuthContext';
 import { NativeModules } from 'react-native';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+
+// Create a client
+const queryClient = new QueryClient();
 
 const { KioskModule } = NativeModules;
 
@@ -39,8 +43,10 @@ function AppInner() {
 
 export default function App() {
   return (
-    <AuthProvider>
-      <AppInner />
-    </AuthProvider>
+    <QueryClientProvider client={queryClient}>
+      <AuthProvider>
+        <AppInner />
+      </AuthProvider>
+    </QueryClientProvider>
   );
 }
