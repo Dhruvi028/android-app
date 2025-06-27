@@ -40,9 +40,65 @@ export default function ProductsScreen({ navigation }: any) {
         if (result && !result.isErrorButNotUnauthorized) {
             setErrorLoadingProduct(false);
             errorModeRef.current = false;
-            const { productsInRows: rows } = result;
-            const clonedRows = rows.map(row => row.map(col => (col ? { ...col } : null)));
-            setProductsInRows(clonedRows);
+            const { productsInRows: newProductsData } = result;
+
+            setProductsInRows(currentProductsInRows => {
+                let overallChanges = false;
+
+                // If the number of rows changes, it's a definite overall change.
+                if (currentProductsInRows.length !== newProductsData.length) {
+                    overallChanges = true;
+                }
+
+                const updatedProductsInRows = newProductsData.map((newRow, rowIndex) => {
+                    const currentRow = currentProductsInRows[rowIndex];
+                    let rowChanges = false;
+
+                    // If the number of columns in a row changes, it's a row change.
+                    if (!currentRow || newRow.length !== currentRow.length) {
+                        rowChanges = true;
+                    }
+
+                    const updatedRow = newRow.map((newProduct, colIndex) => {
+                        const currentProduct = currentRow?.[colIndex];
+
+                        if (!newProduct && !currentProduct) return null; // Both are null
+                        if (!newProduct || !currentProduct) { // One is null, the other is not
+                            rowChanges = true;
+                            return newProduct ? { ...newProduct } : null;
+                        }
+
+                        // Both products exist, compare them. Assuming 'id' is the unique identifier.
+                        // And other relevant props for change detection.
+                        if (newProduct.id !== currentProduct.id ||
+                            newProduct.name !== currentProduct.name ||
+                            newProduct.mrp !== currentProduct.mrp ||
+                            newProduct.quantity !== currentProduct.quantity ||
+                            newProduct.imageUrl !== currentProduct.imageUrl ||
+                            newProduct.status !== currentProduct.status
+                            // Add other properties that, if changed, should trigger a re-render of the card
+                        ) {
+                            rowChanges = true;
+                            return { ...newProduct }; // Create new object for changed product
+                        }
+
+                        // If ids are same and no relevant props changed, reuse the currentProduct reference
+                        return currentProduct;
+                    });
+
+                    if (rowChanges) {
+                        overallChanges = true;
+                        return updatedRow; // This is a new array reference for the row
+                    }
+                    return currentRow; // Reuse existing row array reference
+                });
+
+                if (overallChanges) {
+                    return updatedProductsInRows; // This is a new array reference for productsInRows
+                }
+                return currentProductsInRows; // Reuse existing top-level array reference
+            });
+
         } else if (result?.isErrorButNotUnauthorized) {
             errorModeRef.current = true;
             setErrorLoadingProduct(true);
