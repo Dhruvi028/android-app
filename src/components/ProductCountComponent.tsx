@@ -4,11 +4,17 @@ import { useEffect, useState } from "react";
 import { getProductsInRows } from "../services/productService";
 import { getStoredCart } from "../services/cartStorageService";
 import { updateCartAndStore } from "../services/cartService";
+import React, { useEffect, useState } from "react"; // Imported React
 import { Text, TouchableOpacity, View } from "react-native";
+import PlusSVG from "../../assets/img/plus.svg";
+import MinusSVG from "../../assets/img/minus.svg";
+import { getProductsInRows } from "../services/productService";
+import { getStoredCart } from "../services/cartStorageService";
+import { updateCartAndStore } from "../services/cartService";
 import { useAuth } from "../context/AuthContext";
 import { useStore } from "../store/useStore";
 
-const ProductCountComponent = ({ item, productsInRows, refreshVersion, handleCartRefresh }: any) => {
+const ProductCountComponentInner = ({ item, productsInRows, refreshVersion, handleCartRefresh }: any) => {
     const { cart, setCart } = useStore();
     const { serviceMode, flushData, flushToken, setIsLoggedIn } = useAuth();
 
@@ -72,4 +78,4 @@ const ProductCountComponent = ({ item, productsInRows, refreshVersion, handleCar
     )
 }
 
-export default ProductCountComponent;
+export default React.memo(ProductCountComponentInner);
