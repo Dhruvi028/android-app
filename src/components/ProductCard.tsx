@@ -1,5 +1,6 @@
 import React from 'react';
-import { Dimensions, Image, Text, TouchableOpacity, View } from 'react-native';
+import { Dimensions, Text, TouchableOpacity, View } from 'react-native'; // Removed Image
+import FastImage from 'react-native-fast-image'; // Added FastImage
 import ProductCountComponent from './ProductCountComponent';
 
 const { width } = Dimensions.get('window');
@@ -71,10 +72,14 @@ const ProductCardComponent = ({
 
                         <View className="flex justify-center items-center" style={{ height: 150 }}>
                             <View style={{ width: '100%', aspectRatio: 1.5 }}>
-                                <Image
-                                    source={{ uri: item?.imageUrl }}
-                                    resizeMode="contain"
+                                <FastImage
                                     style={{ width: '100%', height: '100%' }}
+                                    source={{
+                                        uri: item?.imageUrl,
+                                        priority: FastImage.priority.normal, // Optional: .low, .normal, .high
+                                        cache: FastImage.cacheControl.immutable, // Optional: .web, .cacheOnly, .immutable
+                                    }}
+                                    resizeMode={FastImage.resizeMode.contain} // .contain, .cover, .stretch, .center
                                 />
                             </View>
                         </View>
